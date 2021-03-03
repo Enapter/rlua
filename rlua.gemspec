@@ -1,7 +1,7 @@
 Gem::Specification.new do |gem|
   gem.name          = "rlua"
-  gem.version       = '1.2'
-  gem.authors       = ["whitequark"]
+  gem.version       = '1.3'
+  gem.authors       = ["whitequark", "Antiarchitect"]
   gem.email         = ["whitequark@whitequark.org"]
   gem.description   = %q{Ruby to Lua bindings}
   gem.summary       = <<-EOD
