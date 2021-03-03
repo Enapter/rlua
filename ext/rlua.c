@@ -1,7 +1,7 @@
 #include <ruby.h>
-#include <lua5.3/lua.h>
-#include <lua5.3/lauxlib.h>
-#include <lua5.3/lualib.h>
+#include <lua5.4/lua.h>
+#include <lua5.4/lauxlib.h>
+#include <lua5.4/lualib.h>
 #include <ctype.h>
 #include <ruby/encoding.h>
 
@@ -888,7 +888,7 @@ static VALUE rbLua_multret(VALUE self, VALUE args)
   return rb_funcall(cLuaMultret, rb_intern("new"), 1, args);
 }
 
-// bootstrap* are from Lua5.3 source
+// bootstrap* are from Lua5.4 source
 #define SPACECHARS	" \f\n\r\t\v"
 
 static const char *b_str2int (const char *s, int base, lua_Integer *pn) {
@@ -1091,7 +1091,7 @@ static const
  *
  * Deploys an absolute minimum of functions required to write minimally
  * useful Lua programs. This is really a subset of Lua _base_ library
- * (copied from Lua 5.3 sources) that may be handy if you don't like standard
+ * (copied from Lua 5.4 sources) that may be handy if you don't like standard
  * function layout. All of these functions can be implemented in pure Ruby,
  * but that will slow down Lua code incredibly.
  *
@@ -1122,7 +1122,7 @@ static VALUE rbLua_bootstrap(VALUE self)
   return Qtrue;
 }
 
-// from lua5.3/linit.c
+// from lua5.4/linit.c
 static void rlua_openlib(lua_State* state, const char* name, lua_CFunction func)
 {
   luaL_requiref(state, name, func, 1);
