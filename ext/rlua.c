@@ -1,7 +1,7 @@
 #include <ruby.h>
-#include <lua5.1/lua.h>
-#include <lua5.1/lauxlib.h>
-#include <lua5.1/lualib.h>
+#include <lua-5.1/lua.h>
+#include <lua-5.1/lauxlib.h>
+#include <lua-5.1/lualib.h>
 #include <ctype.h>
 #include <ruby/encoding.h>
 
